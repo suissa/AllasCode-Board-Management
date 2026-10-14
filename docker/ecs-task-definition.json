@@ -49,6 +49,10 @@
           "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:paperclip/openai-api-key"
         },
         {
+          "name": "OPENROUTER_API_KEY",
+          "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:paperclip/openrouter-api-key"
+        },
+        {
           "name": "GITHUB_TOKEN",
           "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:paperclip/github-token"
         }
