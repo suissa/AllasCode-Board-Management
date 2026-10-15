@@ -29,7 +29,8 @@
         { "name": "PAPERCLIP_DEPLOYMENT_EXPOSURE", "value": "public" },
         { "name": "PAPERCLIP_PUBLIC_URL", "value": "https://<DOMAIN>" },
         { "name": "PAPERCLIP_MIGRATION_AUTO_APPLY", "value": "true" },
-        { "name": "HEARTBEAT_SCHEDULER_ENABLED", "value": "true" }
+        { "name": "HEARTBEAT_SCHEDULER_ENABLED", "value": "true" },
+        { "name": "GITHUB_TOKEN", "value": "<FROM-.ENV>" }
       ],
       "secrets": [
         {
@@ -49,8 +50,8 @@
           "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:paperclip/openai-api-key"
         },
         {
-          "name": "GITHUB_TOKEN",
-          "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:paperclip/github-token"
+          "name": "OPENROUTER_API_KEY",
+          "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:paperclip/openrouter-api-key"
         }
       ],
       "mountPoints": [
